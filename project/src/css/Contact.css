@@ -1,0 +1,76 @@
+.contacts {
+    max-width: 720px;
+    margin: 40px auto;
+    padding: 0 20px 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #F5F0E6;
+    background-color: #2B2B2B;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+}
+
+.contacts h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 28px;
+    color: #8BA573;
+}
+
+.contacts section {
+    margin-bottom: 36px;
+}
+
+.contacts h2 {
+    font-size: 1.9rem;
+    margin-bottom: 14px;
+    border-bottom: 2px solid #8BA573;
+    padding-bottom: 6px;
+}
+
+.contacts ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contacts li {
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+    color: #DFD0B8;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contacts a {
+    color: #C78751;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contacts a:hover {
+    color: #F5F0E6;
+    text-decoration: underline;
+}
+
+.contacts p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-top: 12px;
+    color: #DFD0B8;
+}
+
+/* Стили для карты */
+.contacts .map-container {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(139, 165, 115, 0.4);
+    margin-top: 12px;
+    height: 350px;
+}
+
+.contacts iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}

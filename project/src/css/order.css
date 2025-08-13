@@ -1,0 +1,88 @@
+.orders-container {
+    max-width: 700px;
+    margin: 20px auto;
+    background: #3a3a3a;
+    padding: 20px;
+    border-radius: 12px;
+    color: #f5f0e6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.orders-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #8ba573;
+}
+
+.orders-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.order-item {
+    background: #222831;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.3);
+    transition: background 0.3s;
+}
+
+.order-item:hover {
+    background: #394a2a;
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.order-id {
+    color: #dfd0b8;
+}
+
+.order-status {
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    user-select: none;
+}
+
+/* Цвета статусов */
+.status-очікує-обробки {
+    background: #f4d35e;
+    color: #222831;
+}
+
+.status-виконано {
+    background: #8ba573;
+    color: #f5f0e6;
+}
+
+.status-відмінено {
+    background: #f05454;
+    color: #fff;
+}
+
+.order-details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #c5c6c7;
+}
+
+.loading,
+.no-orders {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #948979;
+    margin-top: 40px;
+}

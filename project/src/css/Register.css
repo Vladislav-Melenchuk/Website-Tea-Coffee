@@ -1,0 +1,192 @@
+.register-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 85.1vh;
+    background: radial-gradient(circle at center, #f9f6f0 0%, #6f8d67 70%, #263b2a 100%);
+}
+
+.register-banner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.register-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.6);
+}
+
+.register-banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.register-banner-text h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.register-banner-text p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.register-content-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 2rem;
+}
+
+.register-content {
+    display: flex;
+    flex-wrap: nowrap;
+    background: #fdfaf5;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e4d8c9;
+    gap: 2rem;
+    max-width: 1000px;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+
+.register-left {
+    flex: 1;
+    max-width: 420px;
+}
+
+.register-left h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #3a3a2a;
+}
+
+.register-left p {
+    color: #5a4a3f;
+    line-height: 1.6;
+}
+
+.register-login-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.register-login-button {
+    background-color: #8b6f4e;
+    color: white;
+    padding: 0.8rem 1.6rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 650;
+    transition: background 0.3s ease;
+}
+
+.register-login-button:hover {
+    background-color: #a18263;
+}
+
+
+.register-divider {
+    width: 2px;
+    background-color: #c1b3a3;
+    height: auto;
+    align-self: stretch;
+    border-radius: 1px;
+}
+
+.register-form {
+    flex: 1;
+    max-width: 420px;
+    background: #faf6ef;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid #d9c9b6;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    animation: fadeInUp 0.5s ease;
+}
+
+.register-form h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #3a3a2a;
+}
+
+.register-form input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background-color: #fffdfa;
+}
+
+.register-form button {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background-color: #8b6f4e;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: background 0.3s ease;
+    font-size: 1rem;
+}
+
+.register-form button:hover {
+    background-color: #a18263;
+}
+
+.register-error {
+    background-color: rgba(255, 76, 76, 0.15);
+    border: 1px solid rgba(255, 76, 76, 0.4);
+    color: #b91c1c;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.login-loader-wrapper {
+    width: 100%;
+    max-width: 420px;
+    height: 378px; /* такая же как форма */
+    background: #faf6ef;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid #d9c9b6;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

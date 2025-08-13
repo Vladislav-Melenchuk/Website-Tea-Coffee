@@ -1,0 +1,137 @@
+.profile-page {
+    min-height: 85.1vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+}
+
+.profile-avatar-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.profile-avatar {
+    width: 110px;
+    height: 110px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: white;
+    backdrop-filter: blur(6px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.profile-info {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    max-width: 350px;
+    width: 90%;
+    margin-bottom: 2rem;
+}
+
+.profile-info p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.profile-info strong {
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Меню кнопок */
+.profile-buttons {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.profile-buttons button {
+    background-color: #6f4e37;
+    border: none;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    max-width: 250px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.profile-buttons button:hover {
+    background-color: #8b6f4e;
+    transform: translateY(-2px);
+}
+
+/* Помилка */
+.profile-error {
+    padding: 3rem;
+    color: #fff;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profile-buttons {
+    animation: fadeSlideIn 0.5s ease forwards;
+    opacity: 0; /* щоб запобігти миттєвому показу без анімації */
+    animation-delay: 0.2s;
+}
+
+
+
+.admin-icon-bottom {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    padding: 0.75rem;
+    color: white;
+    font-size: 1.7rem;
+    cursor: pointer;
+    z-index: 100;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.admin-icon-bottom:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    transform: scale(1.1);
+}
+
